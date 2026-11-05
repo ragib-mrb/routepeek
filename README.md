@@ -10,14 +10,14 @@ See every route in your Express app, with its arguments, and test it from a page
 ## Install
 
 ```bash
-npm install --save-dev routepeek
+npm install --save-dev @ragib.mrb/routepeek
 ```
 
 ## Use
 
 ```js
 import express from 'express';
-import { routepeek } from 'routepeek'; // import it before your routes
+import { routepeek } from '@ragib.mrb/routepeek'; // import it before your routes
 
 const app = express();
 app.use(express.json());
@@ -30,7 +30,7 @@ app.listen(3000);
 
 Open <http://localhost:3000/__routepeek>.
 
-CommonJS works too: `const { routepeek } = require('routepeek');`
+CommonJS works too: `const { routepeek } = require('@ragib.mrb/routepeek');`
 
 > **Why import first?** Express 5 doesn't keep the mount path of a sub-router (like `/orgs/:org/users`) anywhere readable. Importing routepeek before your routers are created lets it record those paths. If you import it later, routes still show up: the unknown part is shown as `…` until the route gets its first request, and then the real path fills in.
 
@@ -44,7 +44,7 @@ CommonJS works too: `const { routepeek } = require('routepeek');`
 | Real requests     | use your app as usual                                                                                       | query, body and custom header **names and types**, and how often each route was called |
 
 ```js
-import { schema } from 'routepeek';
+import { schema } from '@ragib.mrb/routepeek';
 
 app.post('/users', schema({ body: CreateUser }), createUser);
 ```

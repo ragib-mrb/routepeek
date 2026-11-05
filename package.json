@@ -1,5 +1,5 @@
 {
-  "name": "routepeek",
+  "name": "@ragib.mrb/routepeek",
   "version": "0.1.0",
   "description": "See every route in your Express app, with its arguments, and test it from a zero-config page.",
   "license": "MIT",
