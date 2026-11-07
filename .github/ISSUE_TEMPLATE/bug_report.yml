@@ -1,0 +1,30 @@
+name: Bug report
+description: Something doesn't work as the README says
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you saw, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: How to reproduce
+      description: The smallest Express app that shows the problem helps most.
+      render: js
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      placeholder: routepeek 0.1.0, Express 5.1.0, Node 22.12.0
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS and browser (if it's about the test page)

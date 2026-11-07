@@ -88,6 +88,8 @@ npm test
 npm run example   # example app on http://localhost:3077/__routepeek
 ```
 
+Want to help? See [CONTRIBUTING.md](CONTRIBUTING.md). Changes are listed in [CHANGELOG.md](CHANGELOG.md).
+
 ## License
 
 [MIT](LICENSE)
